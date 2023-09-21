@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/MasterLayout3.cshtml";
+}
+
+<div id="div-form" style="background-color:bisque;">
+    <h2 style="text-align:center; margin-top:0">ĐĂNG KÝ TÀI KHOẢN</h2>
+    <form action="#" method="post" name="frmDK" style="margin:50px">
+        <div id="div-thongtin">
+            <fieldset>
+                <legend>Thông tin cá nhân</legend>
+                <label for="hoten">Họ tên</label>
+                <input type="text" name="hoten" placeholder="Nhập họ tên" />
+                <br />
+                <label for="mk">Mật khẩu</label>
+                <input type="text" name="txtmk" />
+                <br />
+                <label for="diachi">Địa chỉ</label>
+                <select name="sltDC">
+                    <option>Tp.HCM</option>
+                    <option>BRVT</option>
+                    <option>Hà Nội</option>
+                    <option>Quảng Ninh</option>
+
+                </select>
+                <br />
+                <label for="email">Email</label>
+                <input type="email" name="txtemail" />
+                <br />
+                <label for="cannang">Cân nặng</label>
+                <input type="number" name="txtCN" value="" />
+                <br />
+
+                <fieldset>
+                    <legend>Sở thích</legend>
+                    <input type="checkbox" name="chkST" value="db" />Đá banh
+                    <input type="checkbox" name="chkST" value="cl" /> Cầu Lông
+                    <input type="checkbox" name="chkST" value="ds" />Đọc sách
+                    <input type="checkbox" name="chkST" value="xp" /> Xem phim
+                </fieldset>
+                <fieldset>
+                    <legend>Giới tính</legend>
+                    <input type="radio" name="radGT" value="nam" />Nam
+                    <input type="radio" name="radGT" value="nu" />Nữ
+                    <input type="radio" name="radGT" value="khac" />Khác
+
+                </fieldset>
+                <input type="file" />
+            </fieldset>
+        </div>
+        <div id="div-btn">
+            <input type="submit" value="Gửi" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</div>
+
